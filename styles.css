@@ -1,0 +1,50 @@
+*{
+    background-color: #1F2937;
+    margin-left: 10px;
+}
+#main-heading{
+    color:#ECFDF5;
+}
+#main-heading2{
+    color:#4ADF86;
+}
+#btn{
+    background-color: #10B981;
+    padding:15px;
+    border: none;
+    border-radius: 4px;
+    color:#ECFDF5;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+.password-box{
+    height:40px;
+    width: 200px;
+    background-color:#273549;
+    margin:10px;
+    color:#10B981;  
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color:#D5D4D8;
+    margin-top:50px  ;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+hr{
+   border: none;
+   height: 2px;
+   background-color: #273549;
+   margin-top:10px;
+   margin-bottom: 20px;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+h1{
+    font-size: 50px;
+}
