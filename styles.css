@@ -1,7 +1,10 @@
 *{
-    background-color: #1F2937;
+    
     margin-left: 10px;
     margin-right:10px;
+}
+body{
+    background-color: #1F2937;
 }
 #main-heading{
     color:#ECFDF5;
@@ -50,7 +53,7 @@ h1{
     font-size: 50px;
 }
 
-#symbols-toggle {
+.toggle {
   width: 40px;
   height: 20px;
   accent-color: #10B981; /* makes it green */
@@ -77,7 +80,7 @@ h1{
 input[type="number"] {
   appearance: auto;
 }
-#symbols-toggle{
+.toggle{
     border:none;
     
 }

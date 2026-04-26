@@ -10,9 +10,14 @@ let lengthInput=document.getElementById("length");
 let heading=document.getElementsByTagName("h1");
 
 let symbolToggle = document.getElementById("symbols-toggle");
+
+let numberToggle=document.getElementById("number-toggle");
 let letters = [
     'A','B','C','D','E','F','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
     'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+];
+let numbers=[
+    '0','1','2','3','4','5','6','7','8','9'
 ];
 
 let symbols = ['*','&','$','#','!','?','<','>','+'];
@@ -26,6 +31,9 @@ function generate_password(){
     let characters = [...letters];
     if(symbolToggle.checked){
         characters=characters.concat(symbols);
+    }
+    if(numberToggle.checked){
+        characters=characters.concat(numbers);
     }
     for(let i=0;i<length;i++){
         let x=Math.floor(Math.random()*characters.length);
@@ -48,7 +56,7 @@ addPassword1.addEventListener("click", () => {
 });
 
 addPassword2.addEventListener("click",()=>{
-    copyText(addPassword1);
+    copyText(addPassword2);
 })
 function copyText(element){
     let text=element.textContent;
