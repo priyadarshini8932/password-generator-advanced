@@ -11,8 +11,21 @@
     <h1 id="main-heading2"> random password</h1>
     
     <p>Never use an insecure password again</p>
-    <button id="btn">Generate passwords</button>
+    <div class="main-div">
+        <button id="btn">Generate passwords</button>
+        <div>
+        <label class= "values" for="length">Password Length:</label>
+            <input type="number" id="length" value="15" min="4" max="30">
+            </div>
+        <label>
+        <div class="toggle-container">
+        <label class= "values" >
+            Symbols:
+            <input type="checkbox" id="symbols-toggle" checked>
+        </label>
+    </div>
     
+</div>
     <hr>
     <div class="main">
         <div class="password-box" id="box1"></div>
